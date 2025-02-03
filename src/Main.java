@@ -7,3 +7,12 @@ public class Main {
         System.out.println(args[1]);
     }
 }
+
+/**
+ * Needs to Learn
+ * Internal working of hashmap
+ * 3+ years exp Java concepts & questions
+ * Message broker: RABITMQ, KAFKA
+ * SPRING BOOT
+ * MICROSERVICES
+ * */

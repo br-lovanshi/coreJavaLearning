@@ -1,6 +1,4 @@
-package projects;
-
-import com.sun.security.jgss.GSSUtil;
+package projects.bmiCard;
 
 import java.time.LocalDate;
 import java.time.Period;

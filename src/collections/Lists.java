@@ -1,10 +1,8 @@
 package collections;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
-public class Lists {
+public class Lists  {
 
     public static void main(String[] args) {
         List list1 = new ArrayList();
@@ -26,5 +24,16 @@ public class Lists {
         list2.add(4);
         list2.add("one");
         System.out.println(list2);
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        pq.add(25);
+        pq.add(10);
+        pq.add(6);
+        pq.add(20);
+        pq.add(11);
+        System.out.println("Priority queue asc order");
+        while(!pq.isEmpty()){
+            System.out.println(pq.poll());
+        }
     }
 }

@@ -1,4 +1,4 @@
-package collections.Nov03Revision.desingPatterns.creational;
+package collections.Nov03Revision.desingPatterns.Structure;
 
 
 class LegacySystem{

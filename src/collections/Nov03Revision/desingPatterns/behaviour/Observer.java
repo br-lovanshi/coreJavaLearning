@@ -1,4 +1,4 @@
-package collections.Nov03Revision.desingPatterns.Structure;
+package collections.Nov03Revision.desingPatterns.behaviour;
 
 import java.util.ArrayList;
 import java.util.List;

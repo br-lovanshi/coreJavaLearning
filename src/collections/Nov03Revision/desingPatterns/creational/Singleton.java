@@ -1,4 +1,4 @@
-package collections.Nov03Revision.desingPatterns;
+package collections.Nov03Revision.desingPatterns.creational;
 
 public final class Singleton {
     private static Singleton connection;
@@ -22,6 +22,27 @@ public final class Singleton {
     public static void main(String[] args) {
         Singleton singleton = Singleton.getConnection();
         System.out.println(singleton.name);
+    }
+
+    public static class Logger {
+
+        private Logger(){};
+
+        private static class Log{
+            private static final Logger LOG = new Logger();
+        }
+
+        public static Logger getLogger(){
+            return Log.LOG;
+        }
+    }
+
+    static class UseLog{
+        public static void main(String[] args) {
+            Logger log = Logger.getLogger();
+            Logger log1 = Logger.getLogger();
+            System.out.println(log);
+        }
     }
 }
 

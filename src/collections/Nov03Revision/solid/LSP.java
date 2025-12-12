@@ -1,23 +1,27 @@
 package collections.Nov03Revision.solid;
 
-interface Eatable{
-    void eat();
+interface Vehicle{
+    void startEngin();
+    void climateAcOn();
 }
 
-interface Workable{
-    void work();
-}
+class Cycle implements Vehicle {
 
+    @Override
+    public void startEngin() {
+        throw new UnsupportedOperationException("Does not have engin");
+    }
 
-interface Human extends Eatable, Workable{
-
-}
-
-interface Robot extends Workable{
-
+    @Override
+    public void climateAcOn() {
+        throw new UnsupportedOperationException("Does not have AC");
+    }
 }
 public class LSP {
     public static void main(String[] args) {
-
+        Cycle cycle = new Cycle();
+        cycle.climateAcOn();
     }
 }
+
+// Subclass should exactly the copy of parent class without failure.
